@@ -1,21 +1,23 @@
 {
   "name": "hubot-table-unflipper",
   "description": "A hubot script that cleans up after angry people who flip tables",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Simon Willcock <simon@willcock.com.au>",
   "license": "MIT",
-
-  "keywords": ["hubot","hubot-scripts","tables","flip","flipping"],
-
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "tables",
+    "flip",
+    "flipping"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/simonwillcock/hubot-table-unflipper.git"
   },
-
   "bugs": {
     "url": "https://github.com/simonwillcock/hubot-table-unflipper/issues"
   },
-
   "dependencies": {
     "coffee-script": "~1.6"
   },
@@ -23,7 +25,6 @@
     "hubot": "2.x"
   },
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }

@@ -1,14 +1,14 @@
 # Description
-#   A hubot that cleans up after angry people
+#   A sensitive hubot that cleans up after angry people who flip tables
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   None!
 #
 # Commands:
 #   (╯°□°）╯︵ ┻━┻ - Unflips a flipped table
 #
 # Notes:
-#   <optional notes required for the script>
+#
 #
 # Author:
 #   Simon Willcock[@truss]
@@ -61,12 +61,12 @@ module.exports = (robot) ->
       isConvo = true
       if not isCleverFlip
         flipCount += 1
-    else 
+    else
       flipCount = 0
-    
-    
-    
-    robot.logger.info "Current Flips: #{flipCount}, Last Flip: #{lastFlipTime}, Now: #{now}" 
+
+
+
+    robot.logger.info "Current Flips: #{flipCount}, Last Flip: #{lastFlipTime}, Now: #{now}"
 
 
     if isCleverFlip
@@ -88,14 +88,14 @@ module.exports = (robot) ->
       else if flipCount >= 4
         res.send flips.angryFlip
       else if flipCount >= 2
-        res.emote "_#{res.random emotes}_"    
-        setTimeout(->    
+        res.emote "_#{res.random emotes}_"
+        setTimeout(->
           res.send flips.patience
         , 2000)
-      else 
+      else
         res.send flips.patience
 
-    else 
+    else
       res.send flips.patience
 
 
@@ -104,6 +104,3 @@ module.exports = (robot) ->
 
   robot.hear /(┬─┬ ノ\( ゜-゜ノ\)|┬─┬ ノ\( '□'ノ\))/, (res) ->
     res.send res.random tableReplacedResponses
-
-  #robot.respond /put that back (pl(?:s|ease))?/
-

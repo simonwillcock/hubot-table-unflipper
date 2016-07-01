@@ -1,7 +1,7 @@
 {
   "name": "hubot-table-unflipper",
-  "description": "A hubot that puts back tables that have been flipped.",
-  "version": "0.0.0",
+  "description": "A hubot script that cleans up after angry people who flip tables",
+  "version": "0.0.1",
   "author": "Simon Willcock <simon@willcock.com.au>",
   "license": "MIT",
 
@@ -9,11 +9,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-table-unflipper.git"
+    "url": "git://github.com/simonwillcock/hubot-table-unflipper.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-table-unflipper/issues"
+    "url": "https://github.com/simonwillcock/hubot-table-unflipper/issues"
   },
 
   "dependencies": {

@@ -19,18 +19,9 @@
   "dependencies": {
     "coffee-script": "~1.6"
   },
-
-  "devDependencies": {
-    "mocha": "*",
-    "chai": "*",
-    "sinon-chai": "*",
-    "sinon": "*",
-    "grunt-mocha-test": "~0.7.0",
-    "grunt-release": "~0.6.0",
-    "matchdep": "~0.1.2",
-    "grunt-contrib-watch": "~0.5.3"
+  "peerDependencies": {
+    "hubot": "2.x"
   },
-
   "main": "index.coffee",
 
   "scripts": {
